@@ -19,4 +19,10 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+.input-group__input {
+    border-bottom: 1px solid #d4d4d4;
+}
+.toolbar__title, .btn__content {
+  color: #fff;
+}
 </style>
