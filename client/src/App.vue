@@ -1,12 +1,24 @@
 <template>
   <div id="app">
-    <router-view/>
+    <v-app>
+      <app-header></app-header>
+      <main>
+        <v-container fluid>
+          <router-view/>
+        </v-container>
+      </main>
+    </v-app>
   </div>
 </template>
 
 <script>
+import Header from '@/components/Header'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    'app-header': Header
+  }
 }
 </script>
 
@@ -18,11 +30,5 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
-.input-group__input {
-    border-bottom: 1px solid #d4d4d4;
-}
-.toolbar__title, .btn__content {
-  color: #fff;
 }
 </style>
